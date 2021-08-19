@@ -1,0 +1,29 @@
+@import 'variables';
+
+@mixin setFontBody {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin setTypeHeadingTwo {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 10px;
+}
+
+@mixin buttonHeader {
+    padding: 15px 25px;
+    border: none;
+    color: black;
+    background-color: $bg-primary;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+@mixin backgroundImgFooter($url, $size) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: center;
+}
